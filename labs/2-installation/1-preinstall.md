@@ -12,9 +12,6 @@ tmpfs           6.9G     0  6.9G   0% /dev/shm</br>
 cm_processes    6.9G   14M  6.9G   1% /var/run/cloudera-scm-agent/process</br>
 
 #!/bin/sh</br>
-# This script will be executed *after* all the other init scripts.</br>
-# You can put your own initialization stuff in here if you don't</br>
-# want to do the full Sys V style init stuff.</br>
 echo never > /sys/kernel/mm/transparent_hugepage/defrag</br>
 echo never > /sys/kernel/mm/transparent_hugepage/enabled</br>
 touch /var/lock/subsys/local</br>
