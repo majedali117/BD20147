@@ -1,6 +1,5 @@
 Microsoft Windows [Version 10.0.14393]
 (c) 2016 Microsoft Corporation. All rights reserved.
-
 C:\windows\system32>bash
 majedalibash@WINDOWS-BSP279E:/mnt/c/Windows/System32$ ssh majedali@52.166.5.224
 The authenticity of host '52.166.5.224 (52.166.5.224)' can't be established.
