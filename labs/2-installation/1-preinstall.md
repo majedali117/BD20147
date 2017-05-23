@@ -36,3 +36,27 @@ lo        Link encap:Local Loopback</br>
           TX packets:151525 errors:0 dropped:0 overruns:0 carrier:0</br>
           collisions:0 txqueuelen:0</br>
           RX bytes:158766661 (151.4 MiB)  TX bytes:158766661 (151.4 MiB)</br>
+          
+<b>List your network interface configuration</b></br>
+ 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4</br>
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6</br>
+10.0.1.5    majednode1         </br>
+<b>orward and reverse host lookups</b></br>
+[majedali@majednode1 ~]$ sudo nano /etc/hosts </br>
+[majedali@majednode1 ~]$ getent majednode1 </br>
+Unknown database: majednode1 </br>
+Try `getent --help' or `getent --usage' for more information. </br>
+[majedali@majednode1 ~]$ getent hosts majednode1 </br>
+10.0.1.5        majednode1 </br>
+<b> Nscd and Ntdp service </b>
+[majedali@majednode1 ~]$ sudo service nscd start</br>
+Starting nscd:                                             [  OK  ]</br>
+[majedali@majednode1 ~]$ service nscd status</br>
+nscd (pid 24698) is running...</br>
+[majedali@majednode1 ~]$ service ntpd start</br>
+[majedali@majednode1 ~]$ chkconfig ntpd on</br>
+You do not have enough privileges to perform this operation.</br>
+[majedali@majednode1 ~]$ sudo chkconfig ntpd on</br>
+[majedali@majednode1 ~]$ service ntpd status</br>
+ntpd (pid  1635) is running...</br>
+[majedali@majednode1 ~]$ sudo reboot</br>
