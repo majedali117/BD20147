@@ -1,13 +1,14 @@
-Download mysql 
+### Download mysql 
+```
 [majedali@majednode1 ~]$ wget http://repo.mysql.com/mysql-community-release-el6-7.noarch.rpm
 Install mysql
 sudo rpm -ivh mysql-community-release-el6-7.noarch.rpm
 Change mysql server version
 [majedali@majednode1 ~]$ sudo yum-config-manager --disable mysql56-community
 [majedali@majednode1 ~]$ sudo yum-config-manager --enable mysql55-communityInstall mysql
-[majedali@majednode1 ~]$ sudo yum install mysql
+[majedali@majednode1 ~] sudo yum install mysql
 
-[majedali@majednode1 ~]$ sudo yum install mysql-server
+[majedali@majednode1 ~] sudo yum install mysql-server
 =======================================================================================================================
  Package                             Arch                Version                   Repository                      Size
 ========================================================================================================================
@@ -18,15 +19,15 @@ Transaction Summary
 ========================================================================================================================
 Install       1 Package(s)
 Mysql version
-[majedali@majednode1 ~]$ mysql --version
+[majedali@majednode1 ~] mysql --version
 mysql  Ver 14.14 Distrib 5.5.56, for Linux (x86_64) using readline 5.1
 Download JDBC driver
-[majedali@majednode1 ~]$ wget https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.42.tar.gz
+[majedali@majednode1 ~] wget https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.42.tar.gz
 Extract JDBC driver
-[majedali@majednode1 ~]$ tar zxvf mysql-connector-java-5.1.42.tar.gz	
+[majedali@majednode1 ~] tar zxvf mysql-connector-java-5.1.42.tar.gz	
 Copy JDBC jar file
-[majedali@majednode1 mysql-connector-java-5.1.42]$ sudo cp mysql-connector-java-5.1.42.jar /usr/share/java/mysql-connector-java.jar
-
+[majedali@majednode1 mysql-connector-java-5.1.42] sudo cp mysql-connector-java-5.1.42.jar /usr/share/java/mysql-connector-java.jar
+```
 ### YUM repository
 
 ```
