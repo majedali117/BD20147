@@ -60,3 +60,39 @@ You do not have enough privileges to perform this operation.</br>
 [majedali@majednode1 ~]$ service ntpd status</br>
 ntpd (pid  1635) is running...</br>
 [majedali@majednode1 ~]$ sudo reboot</br>
+
+### Mount attributes of all volumes
+```
+[majed@majednode1 ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        30G  1.9G   27G   7% /
+tmpfs           6.9G     0  6.9G   0% /dev/shm
+/dev/sdb1        99G   60M   94G   1% /mnt/resource
+[majed@majednode1 ~]$
+```
+
+### listing the network configuration 
+```
+[majed@majednode1 ~]$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:0D:3A:B7:BD:67
+          inet addr:10.0.5.5  Bcast:10.0.5.255  Mask:255.255.255.0
+          inet6 addr: fe80::20d:3aff:feb7:bd67/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:18630 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:24892 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:10628920 (10.1 MiB)  TX bytes:4757902 (4.5 MiB)
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+[majed@majednode1 ~]$
+
+```
+### 
