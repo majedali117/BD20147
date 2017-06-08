@@ -1,4 +1,5 @@
-Cluster Name
+### Cluster Name
+```
 [majedali@majednode1 ~]$ curl -u admin:admin'http://localhost:7180/api/v13/clusters'
 {
   "items" : [ {
@@ -13,7 +14,10 @@ Cluster Name
     "entityStatus" : "BAD_HEALTH"
   } ]
 }
-All Hive services
+```
+
+### All Hive services
+```
 [majedali@majednode1 ~]$ curl -u admin:admin http://localhost:7180/api/v13/clusters/cluster/services/hive
 {
   "name" : "hive",
@@ -41,7 +45,9 @@ All Hive services
   "displayName" : "Hive",
   "entityStatus" : "BAD_HEALTH"
 }
-Stop Hive service
+```
+### Stop Hive service
+```
 [majedali@majednode1 ~]$ curl -X POST -u admin:admin 'http://localhost:7180/api/v13/clusters/cluster/services/hive/comma
 nds/stop'
 {
@@ -54,7 +60,9 @@ nds/stop'
     "serviceName" : "hive"
   }
 }
-Hive service start
+```
+### Hive service start
+```
 [majedali@majednode1 ~]$ curl -X POST -u admin:admin 'http://localhost:7180/api/v13/clusters/cluster/services/hive/comma
 nds/start'
 {
@@ -67,3 +75,4 @@ nds/start'
     "serviceName" : "hive"
   }
 }
+```
