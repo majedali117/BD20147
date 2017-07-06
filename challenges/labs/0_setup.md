@@ -22,7 +22,7 @@ ronaldo:x:2016:2016::/home/ronaldo:/bin/bash
 ### List group entires
 ```
 [ec2-user@ip-172-31-8-65 ~]$ cat /etc/group | grep barca
-barca:x:2017:
+barca:x:2017:ronaldo
 [ec2-user@ip-172-31-8-65 ~]$ cat /etc/group | grep merengues
 merengues:x:2018:neymar
 [ec2-user@ip-172-31-8-65 ~]$
