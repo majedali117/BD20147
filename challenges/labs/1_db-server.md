@@ -1,3 +1,6 @@
+###hostname of db server node
+
+```
 mysql> select user();
 +----------------+
 | user()         |
@@ -5,8 +8,9 @@ mysql> select user();
 | root@localhost |
 +----------------+
 1 row in set (0.00 sec)
-
-database server's version
+```
+###database server's version
+```
 
 mysql> SHOW VARIABLES LIKE "%version%";
 +-------------------------+------------------------------+
@@ -21,9 +25,11 @@ mysql> SHOW VARIABLES LIKE "%version%";
 | version_compile_os      | Linux                        |
 +-------------------------+------------------------------+
 7 rows in set (0.00 sec)
+```
 
-List all databases
+###List all databases
 
+```
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -40,4 +46,4 @@ mysql> show databases;
 +--------------------+
 9 rows in set (0.00 sec)
 
-
+```
