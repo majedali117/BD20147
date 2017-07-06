@@ -1,4 +1,4 @@
-###full teragen command and job output
+### full teragen command and job output
 ```
 [neymar@ip-172-31-14-244 ec2-user]$ time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar teragen -Ddfs.blocksize=16M -Dmapred.map.tasks=8 655360 /user/neymar/tgen640
 17/07/06 12:21:16 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-14-244/172.31.14.244:8032
@@ -62,7 +62,7 @@ user    0m6.105s
 sys     0m0.315s
 [neymar@ip-172-31-14-244 ec2-user]$
 ```
-###result of the time command
+### result of the time command
 ```
 17/07/06 12:21:16 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-14-244/172.31.14.244:8032
 17/07/06 12:21:17 INFO terasort.TeraGen: Generating 655360 using 8
@@ -126,7 +126,7 @@ sys     0m0.315s
 [neymar@ip-172-31-14-244 ec2-user]$
 
 ```
-###The command and output of hdfs dfs -ls /user/neymar/tgen640
+### The command and output of hdfs dfs -ls /user/neymar/tgen640
 ```
 [neymar@ip-172-31-14-244 ec2-user]$ hdfs dfs -ls /user/neymar/tgen640
 Found 9 items
@@ -142,7 +142,7 @@ Found 9 items
 [neymar@ip-172-31-14-244 ec2-user]$
 
 ```
-###show how many blocks are stored
+### show how many blocks are stored
 
 ```
 [neymar@ip-172-31-14-244 ec2-user]$ hadoop fsck /user/neymar
